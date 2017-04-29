@@ -28,7 +28,6 @@
 		    <div class="collapse navbar-collapse" id="myNavbar">
 		      <ul class="nav navbar-nav">
 		        <li><a href="/">Home</a></li>
-		        <li><a href="/news">News</a></li>
 		        <li><a href="/aboutus">About Us</a></li>
 		      </ul>
 		    @if(session('status') == 1)
