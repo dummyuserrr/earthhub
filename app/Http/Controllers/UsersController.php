@@ -13,7 +13,9 @@ class UsersController extends Controller
     	$u->email = $r->email;
     	$u->password = $r->password;
     	$u->save();
-    	return back();
+        session()->flash('alert', 'alert alert-info');
+        session()->flash('alertmessage text-center', 'You are now registered. Please login.');
+    	return redirect('/login');
     }
 
     public function login(Request $r){
