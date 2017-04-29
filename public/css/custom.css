@@ -1,0 +1,24 @@
+body{
+	background-image: url('/images/bg.png');
+  font-family: 'Titillium Web', sans-serif;
+  background-attachment: fixed;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.btnratereply{
+	width: 10px;
+	height: 10px;
+}
+
+.myfooter{
+	color: white;
+	background-color: #423d3d;
+	border-color: #423d3d;
+	height: 60px;
+	padding-top: 20px;
+}
