@@ -13,8 +13,8 @@ class UsersController extends Controller
     	$u->email = $r->email;
     	$u->password = $r->password;
     	$u->save();
-        session()->flash('alert', 'alert alert-info');
-        session()->flash('alertmessage text-center', 'You are now registered. Please login.');
+        session()->flash('alert', 'alert alert-info text-center');
+        session()->flash('alertmessage', 'You are now registered. Please login.');
     	return redirect('/login');
     }
 
