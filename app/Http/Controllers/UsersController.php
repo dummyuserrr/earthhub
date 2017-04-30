@@ -27,12 +27,16 @@ class UsersController extends Controller
     		return redirect('/');
     	}else{
     		session()->flush();
+            session()->flash('alert', 'alert alert-danger text-center');
+            session()->flash('alertmessage', 'Invalid username or password');
     		return back();
     	}
     }
 
     public function logout(){
         session()->flush();
-        return redirect('/');
+        session()->flash('alert', 'alert alert-info text-center');
+        session()->flash('alertmessage', 'Logout successful');
+        return redirect('/login');
     }
 }

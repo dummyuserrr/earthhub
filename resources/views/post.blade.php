@@ -13,7 +13,13 @@
 			  		<div class="col-sm-1 text-center">
 			  		@if(session('status') == 1)
 			  			<button class="btn" data-toggle="tooltip" title="Rate as useful" onclick="ratePostAsUseful('{{ $post->id }}')"><span class="glyphicon glyphicon-chevron-up"></span></button><br>
-			  			<font id="postRating">{{ $post->ratings }}</font>
+			  			<font id="postRating">
+			  				@if($post->ratings->where('useful', 1)->count() >= $post->ratings->where('useful', 0)->count())
+			  					{{ $post->ratings->where('useful', 1)->count() }}
+			  				@else
+			  					-{{ $post->ratings->where('useful', 0)->count() }}
+			  				@endif
+			  			</font>
 			  			<button class="btn" data-toggle="tooltip" title="Rate as not useful" onclick="ratePostAsNotUseful('{{ $post->id }}')"><span class="glyphicon glyphicon-chevron-down"></span></button><br>
 			  		@else
 
@@ -39,7 +45,7 @@
 			  	@foreach($replies as $reply)
 			  		<div class="replies" style="margin-left: 20px">
 			  		<small class="pull-right">{{ $reply->created_at }}</small>
-				  		<h5><a href="#">(<font id="replyRating{{ $reply->id }}">{{ $reply->ratings }}</font>) <strong>{{ $reply->user->fullname }}</strong></a></h5>
+				  		<h5><a href="#">(<font id="replyRating{{ $reply->id }}">{{ count($reply->ratings) }}</font>) <strong>{{ $reply->user->fullname }}</strong></a></h5>
 				  		<p style="margin-left: 10px">{{ $reply->body }}</p>
 				  		@if(session('status') == 1)
 				  		<small style="margin-left: 10px"><a href="#" onclick="rateReplyAsUseful('{{ $reply->id }}')">Rate as useful</a></small>

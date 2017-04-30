@@ -13,7 +13,6 @@ class RepliesController extends Controller
     	$rep->post_id = $r->postid;
     	$rep->user_id = session('id');
     	$rep->body = $r->body;
-    	$rep->ratings = 0;
     	$rep->save();
     	return back();
     }

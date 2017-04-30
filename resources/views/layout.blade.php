@@ -23,7 +23,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="/" style="margin-top: -3px"><span><image src="/earthhub.png" style="height: 35px; width: 35px; margin-top: -5px"></image></span>EarthHUB</a>
+		      <a class="navbar-brand" href="/" style="margin-top: -3px"><span><image src="/earthhub.png" style="height: 35px; width: 35px; margin-top: -5px"></image></span>Earth<b>HUB</b></a>
 		    </div>
 		    <div class="collapse navbar-collapse" id="myNavbar">
 		      <ul class="nav navbar-nav">

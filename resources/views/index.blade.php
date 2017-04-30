@@ -47,7 +47,7 @@
 			  <div class="panel-body">
 			  @foreach($posts as $post)
 			  	<div class="row">
-			  		<div class="col-sm-1 text-center"><h6>{{ $post->ratings }}<br>ratings</h6></div>
+			  		<div class="col-sm-1 text-center"><h6>{{ count($post->ratings) }}<br>ratings</h6></div>
 			  		<div class="col-sm-1 text-center"><h6>{{ count($post->replies) }}<br>replies</h6></div>
 			  		<div class="col-sm-10"><a href="/post?p={{ $post->id }}"><p>{{ $post->title }}</p></a>
 			  		<p style="text-overflow: ellipsis; white-space: nowrap;overflow: hidden;">{{ $post->body }}</p>
