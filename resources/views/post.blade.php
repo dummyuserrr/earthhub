@@ -25,7 +25,7 @@
 
 			  		@endif
 			  		</div>
-			  		<div class="col-sm-11"><font style="font-size: 23px"> {{ $post->body }}</font>
+			  		<div class="col-sm-11"><font style="font-size: 18px"> {{ $post->body }}</font>
 			  			<div>
 								@foreach($post->categories as $cat)
 					  			<small style="background-color: #5bc0de; padding: 5px;">{{ $cat->category }}</small>
