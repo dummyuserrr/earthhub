@@ -32,7 +32,7 @@
 		      </ul>
 		    @if(session('status') == 1)
 				<ul class="nav navbar-nav navbar-right">
-			      <li><a href="/logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+			      <li><a href="#" onclick="logout()"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
 			    </ul>
 		    @else
 			    <ul class="nav navbar-nav navbar-right">

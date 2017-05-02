@@ -77,3 +77,7 @@ function rateReplyAsNotUseful(replyid){
     xmlhttp.open("GET", url, true);
     xmlhttp.send();
 }
+
+function logout(){
+    window.location.assign('/logout');
+}
