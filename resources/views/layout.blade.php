@@ -89,7 +89,6 @@
 	<br>
 	<br>
 	<footer class="footer text-center">
-		CAN'T WIN || Contact US
-		<a href="https://www.facebook.com"><image src="/fb-art.png" style="height: 35px; width: 35px; margin-top: -5px"></image></a>
+		CAN'T WIN
 	<footer>
 </html>
